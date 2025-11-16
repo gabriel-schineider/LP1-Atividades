@@ -1,0 +1,1 @@
+// Como o senhor disse, Professor, esse exercício apenas faria sentido num caso de alocação dinâmica.
