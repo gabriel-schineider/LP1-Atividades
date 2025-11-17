@@ -10,7 +10,7 @@ typedef struct Caixa
 
 
 // Assinatura das funções
-Caixa * Remove (Caixa * lista, int valor);
+struct Caixa * Remove (Caixa * lista, int valor);
 void exibeEncadeada (Caixa * c0);
 void Remove2 (Caixa ** lista, int valor);
 
@@ -84,7 +84,7 @@ int main (void)
 }
 
 
-Caixa * Remove (Caixa * lista, int valor)
+struct Caixa * Remove (Caixa * lista, int valor)
 {
   // Recebe um ponteiro para o primeiro elemento da lista encadeada
   // Remove todas as ocorrências do valor na lista
