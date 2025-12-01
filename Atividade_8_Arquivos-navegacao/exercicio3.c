@@ -19,10 +19,7 @@ int main (void)
 
 int tamanho (FILE * f)
 {
-  int c = 0; char tmp;
-  while (fgetc(f) != EOF)
-  {
-    c++;
-  }
-  return c;
+  fseek(f, 0, SEEK_END);
+  int tamanho = (int) ftell(f);
+  return tamanho;
 }
